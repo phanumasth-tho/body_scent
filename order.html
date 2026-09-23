@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สั่งซื้อสินค้า — Body Scent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">Body Scent</a>
+      <nav>
+        <a href="product.html" class="btn btn-outline" style="padding: 8px 20px; font-size: 0.75rem;">เลือกสินค้าอื่น</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section-padding">
+    <div class="text-center" style="margin-bottom: 40px;">
+      <h1 class="section-title">Order Details</h1>
+      <p>กรอกข้อมูลการจัดส่งเพื่อยืนยันคำสั่งซื้อของคุณ</p>
+    </div>
+
+    <!-- Order Form (script.js จะดึงข้อมูลจาก ID ทั้งหมดในนี้) -->
+    <form id="orderForm" style="max-width: 580px; margin: 0 auto; background-color: var(--bg-card); padding: 40px; border: 1px solid var(--border-light);">
+      
+      <div class="form-group">
+        <label for="items" style="display: block; margin-bottom: 8px; font-size: 0.85rem; font-weight: 500; color: var(--text-main);">รายการสินค้าที่สั่ง</label>
+        <input type="text" id="items" class="form-control" placeholder="รายการสินค้า" required style="background-color: var(--bg-secondary);">
+      </div>
+
+      <div class="form-group">
+        <label for="total" style="display: block; margin-bottom: 8px; font-size: 0.85rem; font-weight: 500; color: var(--text-main);">จำนวนเงินรวม (บาท)</label>
+        <input type="text" id="total" class="form-control" placeholder="จำนวนเงินรวม" required style="background-color: var(--bg-secondary); font-weight: 600;">
+      </div>
+
+      <div class="form-group">
+        <label for="customerName" style="display: block; margin-bottom: 8px; font-size: 0.85rem; font-weight: 500; color: var(--text-main);">ชื่อ-นามสกุล ผู้รับ</label>
+        <input type="text" id="customerName" class="form-control" placeholder="เช่น คุณสมชาย ใจดี" required>
+      </div>
+
+      <div class="form-group">
+        <label for="contact" style="display: block; margin-bottom: 8px; font-size: 0.85rem; font-weight: 500; color: var(--text-main);">เบอร์โทรศัพท์ / LINE ID</label>
+        <input type="text" id="contact" class="form-control" placeholder="เช่น 081-234-5678 หรือ line_id" required>
+      </div>
+
+      <div class="form-group">
+        <label for="note" style="display: block; margin-bottom: 8px; font-size: 0.85rem; font-weight: 500; color: var(--text-main);">หมายเหตุเพิ่มเติม (ถ้ามี)</label>
+        <textarea id="note" class="form-control" placeholder="เช่น ที่อยู่จัดส่ง, คำขอพิเศษ"></textarea>
+      </div>
+
+      <div style="margin-top: 32px;">
+        <button type="submit" class="btn btn-primary" style="width: 100%;">ยืนยันสั่งซื้อ</button>
+      </div>
+
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer style="padding: 40px 0; border-top: 1px solid var(--border-light); text-align: center; font-size: 0.8rem; color: var(--text-light);">
+    <div class="container">
+      <p>&copy; 2026 Body Scent. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
