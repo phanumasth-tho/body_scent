@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สินค้าทั้งหมด - Body Scent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">Body Scent</a>
+      <nav>
+        <a href="index.html" class="btn btn-outline" style="padding: 8px 20px; font-size: 0.75rem;">หน้าแรก</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="section-padding">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: 40px;">
+        <h1 class="section-title">Our Products</h1>
+        <p>สัมผัสคอลเลกชันน้ำหอมและโรลออนที่รังสรรค์ขึ้นเพื่อสะท้อนทุกมู้ดอารมณ์</p>
+      </div>
+
+      <!-- Filter Bar (script.js จะมาดึงปุ่มและจัดการ event) -->
+      <div id="filter-bar" class="filter-tabs">
+        <button type="button" class="filter-btn" data-mood="all">ทั้งหมด</button>
+        <button type="button" class="filter-btn" data-mood="fresh"><span class="mood-dot fresh"></span>Fresh</button>
+        <button type="button" class="filter-btn" data-mood="sweet"><span class="mood-dot sweet"></span>Sweet</button>
+        <button type="button" class="filter-btn" data-mood="confident"><span class="mood-dot confident"></span>Confident</button>
+        <button type="button" class="filter-btn" data-mood="romance"><span class="mood-dot romance"></span>Romance</button>
+      </div>
+
+      <!-- Product List Container (script.js จะสร้างการ์ดสินค้ามาวางที่นี่) -->
+      <div id="product-list" class="product-grid"></div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer style="border-top: 1px solid var(--border-light); padding: 40px 0; background-color: var(--bg-card);" class="text-center">
+    <div class="container">
+      <p style="font-size: 0.8rem; color: var(--text-light);">&copy; Body Scent. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
