@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Body Scent - เติมเสน่ห์และสะท้อนตัวตนของคุณ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">Body Scent</a>
+      <nav>
+        <a href="product.html" class="btn btn-outline" style="padding: 8px 20px; font-size: 0.75rem;">สินค้าทั้งหมด</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="section-padding text-center" style="min-height: 80vh; display: flex; align-items: center; justify-content: center; background: radial-gradient(circle, #FFFFFF 0%, #FAF8F5 100%);">
+    <div class="container" style="max-width: 860px;">
+      <p class="brand-font" style="letter-spacing: 0.25em; text-transform: uppercase; font-size: 0.85rem; margin-bottom: 24px; color: var(--accent-gold);">Elegance in Every Scent</p>
+      <h1 style="margin-bottom: 32px; font-weight: 300; line-height: 1.35;">
+        เติมเสน่ห์และสะท้อนตัวตนของคุณในทุกมู้ดอารมณ์ ด้วย Body Scent ความหอมลงตัวที่พร้อมเคียงข้างคุณในทุกๆ วัน
+      </h1>
+      <div style="margin-top: 40px;">
+        <a href="product.html" class="btn btn-outline">ดูสินค้าทั้งหมด</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: 4 Moods -->
+  <section class="section-padding" style="background-color: var(--bg-primary);">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: 60px;">
+        <h2 class="section-title">Explore Our Moods</h2>
+        <p>เลือกสรรความหอมที่ตอบโจทย์อารมณ์และสะท้อนเอกลักษณ์ของคุณ</p>
+      </div>
+
+      <div class="product-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+        
+        <!-- Mood 1: Fresh -->
+        <a href="product.html?mood=fresh" class="product-card text-center" style="text-decoration: none;">
+          <div style="padding: 30px 16px;">
+            <div class="mood-dot fresh" style="width: 10px; height: 10px; margin: 0 auto 20px;"></div>
+            <h3 style="margin-bottom: 12px; font-family: var(--font-serif);">Fresh</h3>
+            <p style="font-size: 0.85rem; line-height: 1.6;">สดชื่น โปร่ง สะอาด เบาสบาย ให้ความตื่นตัวสำหรับวันสบายๆ</p>
+          </div>
+        </a>
+
+        <!-- Mood 2: Sweet -->
+        <a href="product.html?mood=sweet" class="product-card text-center" style="text-decoration: none;">
+          <div style="padding: 30px 16px;">
+            <div class="mood-dot sweet" style="width: 10px; height: 10px; margin: 0 auto 20px;"></div>
+            <h3 style="margin-bottom: 12px; font-family: var(--font-serif);">Sweet</h3>
+            <p style="font-size: 0.85rem; line-height: 1.6;">หวานละมุน อ่อนโยน น่ารัก อบอุ่นแบบสบายใจ ให้ความรู้สึกผ่อนคลาย</p>
+          </div>
+        </a>
+
+        <!-- Mood 3: Confident -->
+        <a href="product.html?mood=confident" class="product-card text-center" style="text-decoration: none;">
+          <div style="padding: 30px 16px;">
+            <div class="mood-dot confident" style="width: 10px; height: 10px; margin: 0 auto 20px;"></div>
+            <h3 style="margin-bottom: 12px; font-family: var(--font-serif);">Confident</h3>
+            <p style="font-size: 0.85rem; line-height: 1.6;">นิ่ง สะอาด ดูดี มีความน่าเชื่อถือ พร้อมเสริมความมั่นใจเมื่อเจอผู้คน</p>
+          </div>
+        </a>
+
+        <!-- Mood 4: Romance -->
+        <a href="product.html?mood=romance" class="product-card text-center" style="text-decoration: none;">
+          <div style="padding: 30px 16px;">
+            <div class="mood-dot romance" style="width: 10px; height: 10px; margin: 0 auto 20px;"></div>
+            <h3 style="margin-bottom: 12px; font-family: var(--font-serif);">Romance</h3>
+            <p style="font-size: 0.85rem; line-height: 1.6;">อบอุ่น น่าหลงใหล ชวนให้จดจำ หวานแบบมีเสน่ห์ลึกซึ้งน่าค้นหา</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="border-top: 1px solid var(--border-light); padding: 40px 0; background-color: var(--bg-card);" class="text-center">
+    <div class="container">
+      <p style="font-size: 0.8rem; color: var(--text-light);">&copy; Body Scent. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
